@@ -10,7 +10,7 @@ age = 50;
 console.log(age);
 
 // can't access before initialization
-// console.log(year); // Temporal Dead Zone (Time between hoisting and initialization of let/const)
+// console.log(year); // Temporal Dead Zone (Time between scope and initialization of let/const)
 const year = 2026;
 
 const chargePercentage = 100;
