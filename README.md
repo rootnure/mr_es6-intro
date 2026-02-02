@@ -105,3 +105,24 @@ const max = Math.max(...arr) // Spread operator during Methode Call
 const person = { name: 'Aminul', age: 27 };
 const employee = { ...person, salary: 20000 };
 ```
+
+## Destructuring
+### Object Destructuring
+- Object Must Destructure like an Object
+- Destructure value using any property name of the object
+- If property not present, value will be ```undefined```
+```js
+const { price, quantity } = { type: 'shirt', price: 1000 }; // price = 1000, quantity = undefined
+```
+### Array Destructuring
+- Array Must Destructure like an Array
+- Destructure name can be anything but index matters
+- Skipping is permitted
+```js
+const [firstVal, , thirdVal] = [5, 6, 7, 11]; // firstVal = 5, thirdVal = 7 (Second Value is skipped)
+```
+- Default Value or Alias can be used
+```js
+const {price = 700} = {type: 'pant', quantity: 10}; // Default Value
+const { price: productPrice } = {type: 'pant', price: 600}; // Alias
+```
