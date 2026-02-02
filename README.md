@@ -35,3 +35,17 @@ const num1 = 10, num2 = 20;
 const total = num1 + num2;
 const output = `The total of ${num1} and ${num2} is equal to ${total}`;
 ```
+
+## Arrow Function
+```js
+const sum = (num1, num2) => num1 + num2;
+```
+- Implicite Return
+- Use arrow ```=>```
+- Multiline Arrow Function
+```js
+const getAge = (birthYear, currentYear) => {
+    const age = currentYear - birthYear;
+    return age; // Must Return for Muliline Arrow Function
+}
+```
