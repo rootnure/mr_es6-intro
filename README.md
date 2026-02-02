@@ -71,3 +71,37 @@ document.getElementById('element-id').addEventListener('click', event => {
     // do something inside anonymous arrow funciton
 })
 ```
+
+## Spread Operator ```(...)```
+- Spread String
+```js
+const word = 'hello';
+const alphabets = ...word; // h e l l o
+```
+- Spread Array data
+```js
+const numbers = [1, 2, 3];
+console.log(numbers); // [1, 2, 3]
+console.log(...numbers); // 1 2 3
+```
+- Copy Array without reference
+```js
+const numbers = [1, 2, 3, 4, 5];
+const numbers2 = [...numbers];
+numbers2.push(6); // don't effect "numbers" array
+const numbers3 = [...numbers2, 7, 8]; // copy with new elements
+const numbers4 = [0, ...number3, 9, 10]; // new elements in both side
+```
+- Spread during function/methode call
+```js
+const sumAll = (a, b, c, d) => a + b + c + d;
+
+const arr = [2, 5, 8, 1];
+const result = sumAll(...arr); // Spread operator during Function Call
+const max = Math.max(...arr) // Spread operator during Methode Call
+```
+- Also Useable for Object
+```js
+const person = { name: 'Aminul', age: 27 };
+const employee = { ...person, salary: 20000 };
+```
