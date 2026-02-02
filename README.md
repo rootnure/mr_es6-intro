@@ -37,15 +37,37 @@ const output = `The total of ${num1} and ${num2} is equal to ${total}`;
 ```
 
 ## Arrow Function
+- Implicite Return
+- Use arrow ```=>```
 ```js
 const sum = (num1, num2) => num1 + num2;
 ```
-- Implicite Return
-- Use arrow ```=>```
 - Multiline Arrow Function
 ```js
 const getAge = (birthYear, currentYear) => {
     const age = currentYear - birthYear;
     return age; // Must Return for Muliline Arrow Function
 }
+```
+- Parenthesis is optional for single parameter arrow function
+```js
+// Both are same
+const getDouble1 = (num) => num * 2;
+const getDouble2 = num => num * 2;
+```
+- No parameter arrow function
+```js
+const log = () => console.log('logging');
+```
+- anonymous arrow function
+```js
+document.getElementById('element-id').addEventListener('click', () => {
+    // do something inside anonymous arrow function
+})
+```
+- anonymous arrow function with parameter
+```js
+document.getElementById('element-id').addEventListener('click', event => {
+    // do something inside anonymous arrow funciton
+})
 ```
