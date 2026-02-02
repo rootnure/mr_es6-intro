@@ -21,3 +21,17 @@ function stringJoin(str1 = "", str2 = "") {
     return str1 + str2;
 }
 ```
+
+## Template String ```(``)```
+- Multiple Line String
+```js
+const output = `this is the first line
+this is the second line
+and this is the last or final line`;
+```
+- Dynamic String ```( ${} )```
+```js
+const num1 = 10, num2 = 20;
+const total = num1 + num2;
+const output = `The total of ${num1} and ${num2} is equal to ${total}`;
+```
