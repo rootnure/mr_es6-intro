@@ -126,3 +126,5 @@ const [firstVal, , thirdVal] = [5, 6, 7, 11]; // firstVal = 5, thirdVal = 7 (Sec
 const {price = 700} = {type: 'pant', quantity: 10}; // Default Value
 const { price: productPrice } = {type: 'pant', price: 600}; // Alias
 ```
+
+## Object
