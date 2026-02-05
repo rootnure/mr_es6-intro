@@ -1,12 +1,12 @@
 # Mission Restart: Module 1 (JS Recap and Basic ES6)
 
-## var, let, const
+## 🟥 var, let, const
 - ```var``` --> Hoisting (Not Recommended)
 - ```let``` --> Used for changeable value assign
 - ```const``` --> Used for constant value assign
 - Temporal Deadzone --> Time between scope and initialization of ```let``` / ```const```
 
-## Default Parameters
+## 🟥 Default Parameters
 - Default value in function
 ```js
 function sum(num1 = 0, num2 = 0) {
@@ -22,7 +22,7 @@ function stringJoin(str1 = "", str2 = "") {
 }
 ```
 
-## Template String ```(``)```
+## 🟥 Template String ```(``)```
 - Multiple Line String
 ```js
 const output = `this is the first line
@@ -36,7 +36,7 @@ const total = num1 + num2;
 const output = `The total of ${num1} and ${num2} is equal to ${total}`;
 ```
 
-## Arrow Function
+## 🟥 Arrow Function
 - Implicite Return
 - Use arrow ```=>```
 ```js
@@ -72,7 +72,7 @@ document.getElementById('element-id').addEventListener('click', event => {
 })
 ```
 
-## Spread Operator ```(...)```
+## 🟥 Spread Operator ```(...)```
 - Spread String
 ```js
 const word = 'hello';
@@ -106,7 +106,7 @@ const person = { name: 'Aminul', age: 27 };
 const employee = { ...person, salary: 20000 };
 ```
 
-## Destructuring
+## 🟥 Destructuring
 ### Object Destructuring
 - Object Must Destructure like an Object
 - Destructure value using any property name of the object
@@ -127,7 +127,7 @@ const {price = 700} = {type: 'pant', quantity: 10}; // Default Value
 const { price: productPrice } = {type: 'pant', price: 600}; // Alias
 ```
 
-## Object (Keys, Values, Entries, Delete, Seal, Freeze)
+## 🟥 Object (Keys, Values, Entries, Delete, Seal, Freeze)
 - Keys --> Array of Property Names From an Object
 - Values --> Array of Property Values From an Object
 - Entries --> Array of key-value pair Array
@@ -142,4 +142,17 @@ console.log(Object.entries(myObj)): // array of key-value pair as array
 delete myObj.age; // delete
 Object.seal(myObj); // prevent any modification in object except value modification
 Object.freeze(myObj); // prevent any modification in object (add/remove/modify property/value)
+```
+
+## 🟥 Object Looping
+### Using ```for...in``` loop
+```js
+for(const key in person) {
+    console.log(key, person[key]);
+}
+```
+### Using ```Object.keys()``` and ```Array Looping```
+```js
+const objKeys = Object.keys(person);
+objKeys.forEach(key => console.log(key, person[key]));
 ```
