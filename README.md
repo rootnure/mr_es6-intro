@@ -127,4 +127,19 @@ const {price = 700} = {type: 'pant', quantity: 10}; // Default Value
 const { price: productPrice } = {type: 'pant', price: 600}; // Alias
 ```
 
-## Object
+## Object (Keys, Values, Entries, Delete, Seal, Freeze)
+- Keys --> Array of Property Names From an Object
+- Values --> Array of Property Values From an Object
+- Entries --> Array of key-value pair Array
+- Delete --> Delete a property from an object
+- Seal --> Prevent modification of an object except value of existing properties
+- Freeze --> Prevent any type of modificaiton (add/remove/modify property/value) of an object
+```js
+const myObj = { name: 'harun', age: 25, gender: 'male' };
+console.log(Object.keys(myObj)); // array of keys
+console.log(Object.values(myObj)); // array of values
+console.log(Object.entries(myObj)): // array of key-value pair as array
+delete myObj.age; // delete
+Object.seal(myObj); // prevent any modification in object except value modification
+Object.freeze(myObj); // prevent any modification in object (add/remove/modify property/value)
+```
